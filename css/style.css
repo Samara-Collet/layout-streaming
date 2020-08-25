@@ -14,26 +14,116 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 /* VARIÁVEIS */
 :root{
-  
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 /*BODY*/
 	body{
+		background-color: #141414fa;
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	}
 
+	figcaption{
+		display: none;
 	}
 
 /*TOPO*/
-	header.topo{
-		
+
+	header h2 {
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+		color: rgb(243, 239, 239);
+		font-size: 3em;
+		text-align: center;
+		margin: 0 auto 40px auto; 
 	}
+
+	header.topo img{
+		width: 100px;
+		margin: 2px 0 0 20px;
+	}
+
 
 /*RODAPÉ*/
-	
 
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	footer button{
+		border: 1px solid gray;
+		background-color: #141414fa;
+		font-size: 16px;
+		padding: 8px 20px;
+		text-transform: uppercase;
+		text-align: center;
+		color: gray;
+		left:50%;
+		align-content: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
+	footer button:hover{
+		border: 1px solid rgb(255, 255, 255);
+		color: white;
+	} 
+
+/*PÁGINA INICIAL*/
+section {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+div.pg-home {
+	width: 858px;
+	font-weight: lighter;
+	left:50%;
+	top:50%;
+	margin-right:-50%;
+	transform: translate(-50%,-50%); 
+	position:absolute;
+}
+
+div.pg-home ul{
+	columns: 186px 4;
+	height: 210px;
+	list-style-type: none;
+	float: left;
+	display: block;
+}
+
+div.pg-home li .addPerfil img{
+	width: 80px;
+	border: 10px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+div.pg-home li img {
+	width: 120px;
+	border: 3px solid rgb(56, 56, 56);
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+div.pg-home li img:hover{
+	border: 3px solid white;
+}
+
+div.pg-home h3 {
+	color: gray;
+	text-align: center;
+	padding-top: 10px;
+}
+div.pg-home li h3:hover {
+	color: white;
+}
